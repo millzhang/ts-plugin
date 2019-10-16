@@ -19,9 +19,9 @@ Utils.formatDate()
 
 
 | 方法名 | 描述 | 入参 |
-| :--: | -- | -- |
+| :--: | --- | --- |
 | `getURLParams` | 获取当前连接的参数| `(name?:string)` |
-| `formatDate`| 格式化日期(默认解析当前本地时间) | `(datetime?: number | Date, format?: string)` |
+| `formatDate`| 格式化日期(默认解析当前本地时间) | `(datetime?: number \| Date, format?: string)` |
 | `getDevice` | 获取当前设备类型 | - |
 
 2. `CanvasUtil`相关操作
