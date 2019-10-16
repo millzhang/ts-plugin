@@ -34,4 +34,4 @@ Utils.formatDate()
 
 ### 更多类型 Define
 
--
+[详见类型定义](/src/main.d.ts)
