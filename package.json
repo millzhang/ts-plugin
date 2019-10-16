@@ -16,9 +16,6 @@
     "url": "git+https://github.com/millzhang/ts-plugin.git"
   },
   "keywords": [],
-  "pre-commit": [
-    "lint"
-  ],
   "author": "millzhang",
   "license": "ISC",
   "bugs": {

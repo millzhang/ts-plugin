@@ -1,4 +1,4 @@
-# ts-plugin
+# milk-plugin
 
 > 基于 typescirpt 的 js 插件组件库
 
@@ -21,10 +21,16 @@ Utils.formatDate()
 | 方法名 | 描述 | 入参 |
 | :--: | -- | -- |
 | `getURLParams` | 获取当前连接的参数| `(name?:string)` |
-| `formatDate`| 格式化日期 | `(datetime?: number | Date, format?: string)`|
+| `formatDate`| 格式化日期(默认解析当前本地时间) | `(datetime?: number | Date, format?: string)` |
 | `getDevice` | 获取当前设备类型 | - |
 
-2. `canvas`相关操作
+2. `CanvasUtil`相关操作
+
+`CanvasUtils`是个实体类，使用需要实例化`new CanvasUtil`
+
+| 方法名 | 描述 | 入参 |
+| :--: | -- | -- |
+| `compressImage` | 图片压缩(默认质量分为0.5) | `(imgUrl: string, quality?: number)` |
 
 ### 更多类型 Define
 
