@@ -4,10 +4,11 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "module": "commonjs",
+    "declaration": true,
     "noUnusedParameters": true,
     "strict": true,
     "esModuleInterop": true,
-    "outDir": "lib/",
+    "outDir": "./lib",
     "lib": [
       "dom",
       "es2016.array.include",

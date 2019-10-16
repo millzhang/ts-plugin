@@ -1,13 +1,15 @@
 {
-  "name": "ts-plugin",
-  "version": "1.0.0",
+  "name": "milk-plugin",
+  "version": "0.1.8",
   "description": "基于typescirpt的js插件组件库",
-  "main": "index.js",
+  "main": "./src/main.ts",
+  "typings": "./src/main.d.ts",
   "scripts": {
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "build": "webpack --config webpack.config.ts",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "push": "npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
   "pre-commit": [
     "lint"
   ],
-  "author": "",
+  "author": "millzhang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/millzhang/ts-plugin/issues"

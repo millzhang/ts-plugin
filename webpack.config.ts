@@ -4,10 +4,11 @@ import htmlWebpackPlugin from 'html-webpack-plugin'
 import cleanWebpackPlugin from 'clean-webpack-plugin'
 
 export default {
-  entry: './src/index.ts',
+  entry: './src/main.ts',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'lib'),
+    libraryTarget: "umd"
   },
   resolve: {
     extensions: ['.ts', '.js'],
@@ -41,6 +42,5 @@ export default {
       template: './example/index.ejs',
     }),
     new cleanWebpackPlugin(),
-  ],
-  devtool: 'inline-source-map',
+  ]
 }
