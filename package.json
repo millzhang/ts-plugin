@@ -1,14 +1,11 @@
 {
   "name": "milk-plugin",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "基于typescirpt的js插件组件库",
   "main": "./src/main.ts",
   "typings": "./src/main.d.ts",
   "scripts": {
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json",
-    "build": "webpack --config webpack.config.ts",
-    "start": "webpack-dev-server",
+    "build": "rimraf dist && tsc",
     "push": "npm version patch && npm publish"
   },
   "repository": {
@@ -26,30 +23,7 @@
     "prettier": "^1.18.2",
     "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.6.4",
-    "@babel/plugin-proposal-class-properties": "^7.4.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
-    "@babel/plugin-transform-runtime": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "@babel/preset-typescript": "^7.3.3",
-    "@types/clean-webpack-plugin": "^0.1.3",
-    "@types/html-webpack-plugin": "^3.2.0",
-    "@types/jest": "^24.0.12",
-    "@types/node": "^10.12.2",
-    "@types/webpack": "^4.4.27",
-    "babel-loader": "^8.0.5",
-    "clean-webpack-plugin": "^2.0.1",
-    "ejs-loader": "^0.3.3",
-    "html-webpack-plugin": "^3.2.0",
-    "jest": "^24.8.0",
-    "ts-loader": "^5.4.3",
-    "ts-node": "^8.1.0",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.1",
-    "webpack-dev-server": "^3.3.1"
+    "typescript": "^3.6.4"
   },
-  "dependencies": {
-    "pre-commit": "^1.2.2",
-    "@babel/runtime": "^7.4.5"
-  }
+  "dependencies": {}
 }

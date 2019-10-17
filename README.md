@@ -32,6 +32,14 @@ Utils.formatDate()
 | :--: | -- | -- |
 | `compressImage` | 图片压缩(默认质量分为0.5) | `(imgUrl: string, quality?: number)` |
 
+2. `ValidateUtil`相关操作
+
+`ValidateUtil`是通用的校验方法
+
+| 方法名 | 描述 | 入参 |
+| :--: | -- | -- |
+| `valid` | 提供统一的校验入口(type值可选) | `valid(value: string, type: ValidateType)` |
+
 ### 更多类型 Define
 
 [详见类型定义](/src/main.d.ts)
